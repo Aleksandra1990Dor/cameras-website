@@ -18,21 +18,22 @@
 		}
 
 		@media (max-width: 740px) {
-			@apply text-wrap;
-			padding: 15px 16px 16px 18px;
+			@apply text-nowrap;
+			padding: 15px 17px 16px 18px;
 		}
 
 		> span {
 			@media (max-width: 740px) {
-				@apply overflow-hidden text-nowrap;
-				max-width: 80px;
+				> span {
+					@apply hidden;
+				}
 			}
 		}
 
 		> img {
 			margin-left: 20px;
 			@media (max-width: 740px) {
-				margin-left: 4px;
+				margin-left: 10px;
 			}
 		}
 	}
