@@ -2,26 +2,31 @@
 	@apply mx-auto;
 
 	@media (min-width: 1430px) {
-		@apply w-container;
+		@apply w-container mx-auto;
 	}
 
 	@media (min-width: 1290px) {
-		@apply w-laptop;
+		@apply w-laptop mx-auto;
 	}
 
 	@media (max-width: 1290px) {
-		@apply w-sm-laptop;
+		@apply w-sm-laptop mx-auto;
 	}
 
 	@media (max-width: 1020px) and (min-width: 746px) {
-		@apply w-full;
+		@apply w-full mx-auto;
 		width: 688px;
 	}
 
 	@media (max-width: 746px) {
-		@apply w-full;
+		@apply w-full mx-auto;
 		padding: 0 45px 0 45px;
 		min-width: 300px;
+	}
+	@media (max-width: 420px) {
+		@apply mx-auto;
+		min-width: 300px;
+		padding: 0 15px 0 15px;
 	}
 }
 
@@ -69,6 +74,10 @@
 
 			@media (max-width: 740px) {
 				gap: 70px;
+			}
+
+			@media (max-width: 386px) {
+				gap: 40px;
 			}
 		}
 

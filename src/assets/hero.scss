@@ -17,6 +17,10 @@
 		padding: 60px 0 59px 0;
 	}
 
+	@media (max-width: 467px) {
+		background-size: 500px auto;
+	}
+
 	&__title {
 		@apply text-4xl leading-130 font-semibold;
 		margin-bottom: 41px;
@@ -28,6 +32,10 @@
 
 		@media (max-width: 720px) {
 			@apply text-2xl leading-125;
+			margin-bottom: 40px;
+		}
+		@media (max-width: 420px) {
+			@apply text-xl leading-125;
 			margin-bottom: 40px;
 		}
 

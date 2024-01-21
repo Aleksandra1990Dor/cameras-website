@@ -72,6 +72,9 @@
 					padding: 38px 30px 41px 30px;
 					width: 390px;
 				}
+				@media (max-width: 386px) {
+					@apply w-full;
+				}
 
 				&:nth-child(1) {
 					.img {
@@ -128,6 +131,9 @@
 						height: 180px;
 						margin-bottom: 30px;
 					}
+					@media (max-width: 386px) {
+						@apply w-full;
+					}
 				}
 
 				&_title {
@@ -135,6 +141,9 @@
 					margin-bottom: 10px;
 					@media (max-width: 630px) {
 						@apply text-lg;
+					}
+					@media (max-width: 460px) {
+						@apply leading-none;
 					}
 				}
 
