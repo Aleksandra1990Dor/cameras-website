@@ -1,0 +1,39 @@
+.aside {
+	@apply absolute right-0 top-6.4 min-h-full;
+
+	@media (max-width: 1040px) and (min-width: 740px) {
+		top: 10px;
+	}
+	@media (max-width: 740px) {
+		top: 6px;
+	}
+
+	&__btn {
+		@apply leading-140 text-xs font-semibold flex items-end sticky right-0 top-6.4 z-20;
+		border-radius: 8px 0px 0px 8px;
+		padding: 29px 18px 31px 18px;
+
+		@media (max-width: 1180px) and (min-width: 740px) {
+			padding: 31px 19px 31px 18px;
+		}
+
+		@media (max-width: 740px) {
+			@apply text-wrap;
+			padding: 15px 16px 16px 18px;
+		}
+
+		> span {
+			@media (max-width: 740px) {
+				@apply overflow-hidden text-nowrap;
+				max-width: 80px;
+			}
+		}
+
+		> img {
+			margin-left: 20px;
+			@media (max-width: 740px) {
+				margin-left: 4px;
+			}
+		}
+	}
+}
